@@ -19,8 +19,9 @@ class CreatePersonasTable extends Migration
             $table->string('apellidos');
             $table->string('edad');
             $table->string('sexo');
-            $table->string('celular');
+            $table->string('celular')->nullable();
             $table->string('tipo_persona'); //niño o adulto
+            $table->integer('persona_estado');
             $table->timestamps();
         });
     }
